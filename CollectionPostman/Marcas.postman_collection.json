@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f7121653-17a4-4993-a6ac-b99de21bb852",
+		"name": "Marcas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23762423"
+	},
+	"item": [
+		{
+			"name": "localhost:9000/api/marcas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/marcas",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/marcas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"marcas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/marcas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Chevrolet\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/marcas",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/marcas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Chevrolet\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/marcas/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"marcas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/marcas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Chevrolet\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/marcas/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"marcas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

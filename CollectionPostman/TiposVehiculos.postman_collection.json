@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "fbf89970-8791-4e0b-8ea9-a8de63d1afaf",
+		"name": "TiposVehiculos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23762423"
+	},
+	"item": [
+		{
+			"name": "localhost:9000/api/tiposVehiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/tiposVehiculos",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"tiposVehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/tiposVehiculos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"tiposVehiculos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/tiposVehiculos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Camion\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/tiposVehiculos",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"tiposVehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/tiposVehiculos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Tractomula\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/tiposVehiculos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"tiposVehiculos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/tiposVehiculos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":3,\r\n    \"descripcion\":\"Tractomula\",\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/tiposVehiculos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"tiposVehiculos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "3c4c7ed1-d7ee-48c1-8827-9915ed40523b",
+		"name": "Inventarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23762423"
+	},
+	"item": [
+		{
+			"name": "localhost:9000/api/inventarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/inventarios",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/inventarios/14",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventarios",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/inventarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"precioUnitario\":50,\r\n    \"cantidadExistente\":2,\r\n    \"observacion\":\"En bodega2\",\r\n    \"estado\":1,\r\n    \"vehiculoId\":{\r\n        \"id\":2\r\n    },\r\n    \"tipoEstado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/inventarios",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/inventarios",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"precioUnitario\":50000000,\r\n    \"cantidadExistente\":4,\r\n    \"observacion\":\"En bodega3\",\r\n    \"estado\":0,\r\n    \"vehiculoId\":{\r\n        \"id\":2\r\n    },\r\n    \"tipoEstado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/inventarios/14",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventarios",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9000/api/inventarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"precioUnitario\":65000000,\r\n    \"cantidadExistente\":100,\r\n    \"Observacion\":\"En bodega\",\r\n    \"estado\":1,\r\n    \"tipoEstado\":1,\r\n    \"vehiculoId\":{\r\n        \"id\":1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/inventarios/14",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"inventarios",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
